@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  matchday_id: 
+  gameId: MyString
+  start: 2016-06-24 21:16:26
+  finished: false
+  result1: 9.99
+  result2: 9.99
+  factor: 9.99
+
+two:
+  matchday_id: 
+  gameId: MyString
+  start: 2016-06-24 21:16:26
+  finished: false
+  result1: 9.99
+  result2: 9.99
+  factor: 9.99

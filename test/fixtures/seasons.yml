@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  league_id: 
+  name: MyString
+  seasonId: MyString
+
+two:
+  league_id: 
+  name: MyString
+  seasonId: MyString

@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  matchday_id: 
+  change_time: 2016-06-24 22:06:20
+
+two:
+  matchday_id: 
+  change_time: 2016-06-24 22:06:20
