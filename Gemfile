@@ -45,3 +45,11 @@ group :development do
   gem 'spring'
 end
 
+# MySQL for backend
+gem 'mysql2', '~>0.3.21'
+
+# HAML as template
+gem 'haml-rails'
+
+# Devise for user authentication
+gem 'devise'
