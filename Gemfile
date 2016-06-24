@@ -53,3 +53,4 @@ gem 'haml-rails'
 
 # Devise for user authentication
 gem 'devise'
+gem 'devise-i18n'
