@@ -1,0 +1,17 @@
+default: &default
+  host: "192.168.122.248:3000"
+  openligadb_url: "www.openligadb.de/api"
+  title: "EM-Tippspiel"
+  devise:
+    recoverable: true
+    confirmable: true
+    validatable: true
+
+production:
+  <<: *default
+
+development:
+  <<: *default
+
+test:
+  <<: *default
