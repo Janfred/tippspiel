@@ -15,7 +15,7 @@
         %header.mdl-layout__header
           .mdl-layout__header-row
             %span
-              = t(controller.controller_path.gsub("/", ".") + "." + controller.action_name)
+              = t(controller.controller_path.gsub("/", ".") + "." + controller.action_name + ".title" )
         %main.mdl-layout__content
           .page-content
             = yield
