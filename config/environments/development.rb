@@ -38,4 +38,7 @@ Rails.application.configure do
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
+  #
+  # Make better errors available for the host of the vm
+  BetterErrors::Middleware.allow_ip! "192.168.122.0/24"
 end
