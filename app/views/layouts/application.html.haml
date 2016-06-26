@@ -1,10 +1,23 @@
-!!!
+!!! 5
 %html
   %head
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
-    %title Tippspiel
+    %meta{:name=>"viewport",:content=>"width=device-width, initial-scale=1"}
+    %title
+      = APP_CONFIG['title']
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
   %body
-    = yield
+    .mdl-layout.mdl-js-layout.mdl-layout--fixed-drawer.mdl-layout--fixed-header
+      = render "layouts/menu"
+      - if controller.controller_path.match /^devise\// then
+        %header.mdl-layout__header
+          .mdl-layout__header-row
+            %span
+              = t(controller.controller_path.gsub("/", ".") + "." + controller.action_name)
+        %main.mdl-layout__content
+          .page-content
+            = yield
+      - else
+        = yield
