@@ -54,3 +54,7 @@ gem 'haml-rails'
 # Devise for user authentication
 gem 'devise'
 gem 'devise-i18n'
+
+# Google Material Design
+gem 'material_design_lite-rails'
+gem 'material_icons'
