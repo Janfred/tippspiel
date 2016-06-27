@@ -1,9 +1,14 @@
 .mdl-layout__drawer
-  %span.mdl-layout-title{onclick:"window.location='#{root_path}'", style:"cursor:pointer"}
-    Home
   %nav.mdl-navigation
+    = link_to root_path, class: "mdl-navigation__link" do
+      %i.material-icons home
+      Home
     - if user_signed_in? then
       = link_to "Logout", destroy_user_session_path, class: "mdl-navigation__link"
     - else
-      = link_to "Login", new_user_session_path, class: "mdl-navigation__link"
-      = link_to "Registrieren", new_user_registration_path, class: "mdl-navigation__link"
+      = link_to new_user_session_path, class: "mdl-navigation__link" do
+        %i.material-icons exit_to_app
+        Login
+      = link_to  new_user_registration_path, class: "mdl-navigation__link" do
+        %i.material-icons system_update_alt
+        Registrieren

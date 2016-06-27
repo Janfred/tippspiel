@@ -13,19 +13,21 @@
  *= require_tree .
  *= require_self
  *= require material
+ *= require material_icons
  */
 
 body
 {
   margin:0px;
   padding-bottom:3em;
-  text-align:center;
-  align:center;
 }
 header
 {
   width:100%;
-  text-align:center;
+}
+main.mdl-layout__content
+{
+  text-align: center;
 }
 .mdl-layout__header {
   background-color:#2B2 !important;
