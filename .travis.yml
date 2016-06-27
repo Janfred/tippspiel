@@ -6,3 +6,5 @@ rvm:
 before_script:
   - cp config/database.yml_travis config/database.yml
   - bundle exec rake db:create
+notifications:
+  email: false
