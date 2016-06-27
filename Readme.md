@@ -1,5 +1,6 @@
 # Tippspiel auf Basis einer offenen Ligadatenbank
 
+[![Build Status](https://travis-ci.org/Janfred/tippspiel.svg?branch=master)](https://travis-ci.org/Janfred/tippspiel)
 [![Code Climate](https://codeclimate.com/github/Janfred/tippspiel/badges/gpa.svg)](https://codeclimate.com/github/Janfred/tippspiel)
 [![Test Coverage](https://codeclimate.com/github/Janfred/tippspiel/badges/coverage.svg)](https://codeclimate.com/github/Janfred/tippspiel/coverage)
 [![Dependency Status](https://gemnasium.com/badges/github.com/Janfred/tippspiel.svg)](https://gemnasium.com/github.com/Janfred/tippspiel)
