@@ -1,17 +1,20 @@
 %h2= t('.sign_in')
 = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
-  .field
-    = f.label :username
-    %br/
-    = f.text_field :username, autofocus: true
-  .field
-    = f.label :password
-    %br/
-    = f.password_field :password, autocomplete: "off"
+  .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label
+    = f.label :username, class: "mdl-textfield__label"
+    = f.text_field :username, autofocus: true, class: "mdl-textfield__input"
+  %br/
+  .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label
+    = f.label :password, class: "mdl-textfield__label"
+    = f.password_field :password, autocomplete: "off", class: "mdl-textfield__input"
+  %br/
   - if devise_mapping.rememberable?
-    .field
-      = f.check_box :remember_me
-      = f.label :remember_me
-  .actions
-    = f.submit t('.sign_in')
+    = f.label :remember_me, style: "width:auto", class: "mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" do
+      = f.check_box :remember_me, class: "mdl-checkbox__input"
+      %span.mdl-checkbox__label
+        = t('.remember_me')
+  %br/
+  %button.mdl-button.mdl-js-button.mdl-button--raised{type: "submit"}
+    = t('.sign_in')
+  %br/
 = render "devise/shared/links"

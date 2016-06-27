@@ -21,3 +21,12 @@
             = yield
       - else
         = yield
+      %footer.mdl-mini-footer
+        .mdl-mini-footer__left-section
+          .mdl-logo
+            = APP_CONFIG['title']
+          %ul.mdl-mini-footer__link-list
+            %li
+              Copyright 2016 Jan-Frederik Rieckers
+            %li
+              = link_to "Home", root_path
