@@ -14,3 +14,169 @@
  *= require_self
  *= require material
  */
+
+body
+{
+  margin:0px;
+  padding-bottom:3em;
+  text-align:center;
+  align:center;
+}
+header
+{
+  width:100%;
+  text-align:center;
+}
+.mdl-layout__header {
+  background-color:#2B2 !important;
+}
+.navlink_nohover:hover {
+  background-color: rgb(250,250,250) !important;
+}
+.table_dark_column {
+  background-color: #eeeeee !important;
+}
+.left_bordered_cell {
+  border-left: 1px solid rgb(0,0,0) !important;
+}
+.team_logo {
+  height: 13px;
+  width: 19px;
+}
+ul.navbar-nav
+{
+  align:center;
+  width:100%;
+  padding:0px;
+  background-color:#333344;
+  margin:0px;
+}
+ul.navbar-nav li
+{
+  display:inline-block;
+  text-align:center;
+  vertical-align:middle;
+  margin:0px;
+  padding:8px;
+  background-color:#555577;
+  height:100%;
+  color:#FFFFFF;
+}
+ul.navbar-nav li a
+{
+  color:#FFFFFF;
+  text-decoration:none;
+}
+ul.navbar-nav li:hover
+{
+ background-color:#88AACC;
+}
+ul.navbar-nav li ul
+{
+  padding:0px;
+}
+div.footer
+{
+  position:fixed;
+  bottom:0px;
+  margin:0px;
+  background-color:#333344;
+  width:100%;
+  text-align:center;
+}
+div.footer div
+{
+  display:inline-block;
+  text-align:center;
+  vertical-align:center;
+  margin:0px;
+  padding:8px;
+  background-color:#555577;
+  height:100%;
+  color:#FFFFFF;
+}
+div.footer div a
+{
+  color:#FFFFFF;
+  text-decoration:none;
+}
+div.footer div.matchday:hover
+{
+  background-color:#88AACC;
+}
+div.flash
+{
+  margin: 0 auto;
+  width:-moz-fit-content;
+  padding:8px;
+  border:3px solid #e3e3e3;
+  border-radius:4px;
+}
+div.flash_notice
+{
+  background-color:#77FF77;
+}
+div.flash_warning
+{
+  background-color:#FFFFAA;
+}
+div.flash_danger
+{
+  background-color:#FF7777;
+}
+.playing
+{
+  color:#F00;
+}
+input.warning
+{
+  background-color:#FFFF88;
+}
+
+input.error
+{
+  background-color:#FF9999;
+}
+.replacehide
+{
+  display:none;
+}
+@media (max-width:50em)
+{
+  .hideifsmall
+  {
+    display:none;
+  }
+}
+
+@media (max-width:30em)
+{
+  .hideifverysmall
+  {
+    display:none;
+  }
+  .replacehide
+  {
+    display:table-cell;
+  }
+}
+.tippfield
+{
+  width:30px !important;
+  padding:0px !important;
+}
+.shortname
+{
+  display:none;
+}
+@media screen and (max-width:1024px){
+
+ .longname
+ {
+   display:none;
+ }
+ .shortname
+ {
+   display:table-cell;
+ }
+}
